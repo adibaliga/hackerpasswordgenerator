@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px;
+            table-layout: fixed;
+        }
+        
+        .button1 {
+            background-color: #9257AE;
+            border: none;
+            color: white;
+            padding: 6px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .button2 {
+            background-color: #FF1010;
+            border: none;
+            color: white;
+            padding: 6px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .button3 {
+            background-color: #f08416;
+            border: none;
+            color: white;
+            padding: 6px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .button4 {
+            background-color: #ffe600;
+            border: none;
+            color: white;
+            padding: 6px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        .button5 {
+            background-color: #1eab4f;
+            border: none;
+            color: white;
+            padding: 6px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="font-family: verdana; color:white; background-color:#2e3649;">
+
+    <center>
+        <h1><b>TIME IT TAKES FOR A HACKER<BR>TO CRACK YOUR PASSWORD</B>
+            <BR>
+            <center>
+                <HR style="width:40%;text-align:center">
+        </h1>
+        </center>
+        <p id="passwordid"><i>SAMPLE PASSOWRDS WILL BE SHOWN HERE<i></p>
+<table style="width:100%">
+<tr>
+<td>Numbers  of Characters		</td>
+<td>Numbers Only				</td>
+<td>Lowercase Letters			</td>   
+<td>Upper and Lowercase Letters			</td>
+<td>Numbers,Upper and Lowercase Letters			</td>
+<td>Numbers,Upper and Lowercase Letters,Symbols			</td>
+</tr><br>
+<tr>
+<td style="background-color: #858795">4	</td>
+<td><button class="button button1"; onclick="password(4,1)",class="button">Instantly</td>
+<td><button class="button button1"; onclick="password(4,2)">Instantly</td>
+<td><button class="button button1"; onclick="password(4,3)">Instantly</td>
+<td><button class="button button1"; onclick="password(4,4)">Instantly</td>
+<td><button class="button button1"; onclick="password(4,5)">Instantly</td>
+</tr>
+<tr>
+<td style="background-color: #858795">5	</td>
+<td><button class="button button1"; onclick="password(5,1)">Instantly</td>
+<td><button class="button button1"; onclick="password(5,2)">Instantly</td>
+<td><button class="button button1"; onclick="password(5,3)">Instantly</td>
+<td><button class="button button1"; onclick="password(5,4)">Instantly</td>
+<td><button class="button button1"; onclick="password(5,5)">Instantly</td>
+</tr>
+<tr>
+
+<td style="background-color: #858795">6	</td>
+<td><button class="button button1"; onclick="password(6,1)">Instantly	</td>
+<td><button class="button button1"; onclick="password(6,2)">Instantly	</td>
+<td><button class="button button1"; onclick="password(6,3)">Instantly	</td>
+<td><button class="button button2"; onclick="password(6,4)">1 sec       </td>
+<td><button class="button button2"; onclick="password(6,5)">5 secs      </td>
+</tr>
+<tr>
+
+<td style="background-color: #858795">7	</td>
+<td><button class="button button1"; onclick="password(7,1)">Instantly	</td>
+<td><button class="button button1"; onclick="password(7,1)">Instantly	</td>
+<td><button class="button button2"; onclick="password(7,3)">25 secs     </td>
+<td><button class="button button2"; onclick="password(7,4)">1 min       </td>
+<td><button class="button button2"; onclick="password(7,5)">6 mins      </td>
+</tr>
+<tr>
+
+<td style="background-color: #858795">8	</td>
+<td><button class="button button1"; onclick="password(8,1)">Instantly	</td>
+<td><button class="button button2"; onclick="password(8,2)">5 secs      </td>
+<td><button class="button button2"; onclick="password(8,3)">22 mins     </td>
+<td><button class="button button2"; onclick="password(8,4)">1 hour      </td>
+<td><button class="button button2"; onclick="password(8,5)">8 hours     </td>
+</tr>
+<tr>
+<td style="background-color: #858795">9	</td>
+<td><button class="button button1"; onclick="password(9,1)">Instantly	</td>
+<td><button class="button button2"; onclick="password(9,2)">2 mins      </td>
+<td><button class="button button2"; onclick="password(9,3)">19 hours    </td>
+<td><button class="button button3"; onclick="password(9,4)">3 days      </td>
+<td><button class="button button3"; onclick="password(9,5)">3 weeks     </td>
+</tr>
+<tr>
+<td style="background-color: #858795">10	</td>
+<td><button class="button button1"; onclick="password(10,1)">Instantly	</td>
+<td><button class="button button2"; onclick="password(10,2)">58 mins     </td>
+<td><button class="button button3"; onclick="password(10,3)">1 month     </td>
+<td><button class="button button3"; onclick="password(10,4)">7 months    </td>
+<td><button class="button button4"; onclick="password(10,5)">5 years     </td>
+</tr>
+<tr>
+<td style="background-color: #858795">11	</td>
+<td><button class="button button2"; onclick="password(11,1)">2 secs      </td>
+<td><button class="button button3"; onclick="password(11,2)">1 day       </td>
+<td><button class="button button3"; onclick="password(11,3)">5 years     </td>
+<td><button class="button button4"; onclick="password(11,4)">41 years    </td>
+<td><button class="button button4"; onclick="password(11,5)">400 years   </td>
+</tr>
+<tr>
+<td style="background-color: #858795">12	</td>
+<td><button class="button button2"; onclick="password(12,1)">25 secs     </td>
+<td><button class="button button3"; onclick="password(12,2)">3 weeks     </td>
+<td><button class="button button4"; onclick="password(12,3)">300 years   </td>
+<td><button class="button button5"; onclick="password(12,4)">2k years    </td>
+<td><button class="button button5"; onclick="password(12,5)">34k years   </td>
+</tr>
+<tr>
+<td style="background-color: #858795">13	</td>
+<td><button class="button button2"; onclick="password(13,1)">4 mins      </td>
+<td><button class="button button4"; onclick="password(13,2)">1 year      </td>
+<td><button class="button button4"; onclick="password(13,3)">16k years   </td>
+<td><button class="button button5"; onclick="password(13,4)">100k years  </td>
+<td><button class="button button5"; onclick="password(13,5)">2m years    </td>
+</tr>
+<tr>
+<td style="background-color: #858795">14	</td>
+<td><button class="button button2"; onclick="password(14,1)">41 mins     </td>
+<td><button class="button button4"; onclick="password(14,2)">51 years    </td>
+<td><button class="button button4"; onclick="password(14,3)">800k years  </td>
+<td><button class="button button5"; onclick="password(14,4)">9m years    </td>
+<td><button class="button button5"; onclick="password(14,5)">200m years  </td>
+</tr>
+<tr>
+<td style="background-color: #858795">15	</td>
+<td><button class="button button2"; onclick="password(15,1)">6 hours     </td>
+<td><button class="button button4"; onclick="password(15,2)">1k years    </td>
+<td><button class="button button4"; onclick="password(15,3)">43m years   </td>
+<td><button class="button button5"; onclick="password(15,4)">600m years  </td>
+<td><button class="button button5"; onclick="password(15,5)">15 bn years </td>
+</tr>
+<tr>
+<td style="background-color: #858795">16	</td>
+<td><button class="button button3"; onclick="password(16,1)">2 days      </td>
+<td><button class="button button4"; onclick="password(16,2)">34k years   </td>
+<td><button class="button button4"; onclick="password(16,3)">2bn years   </td>
+<td><button class="button button5"; onclick="password(16,4)">37bn years  </td>
+<td><button class="button button5"; onclick="password(16,5)">1tn years   </td>
+
+
+
+</tr>
+<tr>
+<td style="background-color: #858795" >17	</td>
+<td><button class="button button3"; onclick="password(17,1)">4 weeks      </td>
+<td><button class="button button4"; onclick="password(17,2)">800k years     </td>
+<td><button class="button button4"; onclick="password(17,3)">100bn years      </td>
+<td><button class="button button5"; onclick="password(17,4)">2tn years      </td>
+<td><button class="button button5"; onclick="password(17,5)">93tn years      </td>
+</tr>
+<tr>
+<td style="background-color: #858795">18	</td>
+<td><button class="button button3"; onclick="password(18,1)">9 months	</td>
+<td><button class="button button4"; onclick="password(18,2)">23m years 	</td>
+<td><button class="button button4"; onclick="password(18,3)">6tn years	</td>
+<td><button class="button button5"; onclick="password(18,4)">100tn years	</td>
+<td><button class="button button5"; onclick="password(18,5)">7qd years	</td>
+
+</table>
+<a href="https://www.hivesystems.io/ "><img src="linkicon.png"></a>
+<script>
+    function password(quantity, type) {
+        var lowerString = 'abcdefghijklmnopqrstuvwxyz';
+        var upperString = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var mixedString = lowerString + upperString;
+        var symbols = '~`!@#$%^&*()_+-={}[:]";\'<>?,./|\\';
+        var numbers = '0123456789';
+        var numUppLow = numbers + upperString + lowerString;
+        var mixedVariable = lowerString+upperString+numbers+symbols;
+        console.log(mixedVariable);
+        var value = '';
+        //numbers only
+        switch (type) {
+            case 1:
+                for (i = 0; i < quantity; i++) {
+                    value += numbers.charAt(Math.floor(Math.random() * numbers.length));
+                    console.log(value);
+                }
+                break;
+            case 2:
+                for (i = 0; i < quantity; i++) {
+                    value += lowerString.charAt(Math.floor(Math.random() * lowerString.length));
+                    console.log(value);
+                }
+                break;
+            case 3:
+                for (i = 0; i < quantity; i++) {
+                    value += mixedString.charAt(Math.floor(Math.random() * mixedString.length));
+                    console.log(value);
+                }
+                break;
+            case 4:
+                for (i = 0; i < quantity; i++) {
+                    value += numUppLow.charAt(Math.floor(Math.random() * numUppLow.length));
+                    console.log(value);
+                }
+                break;
+            case 5:
+                for (i = 0; i < quantity; i++) {
+                    value += mixedVariable.charAt(Math.floor(Math.random() * mixedVariable.length));
+                    console.log(value);
+                }
+                break;
+
+        }
+        document.getElementById("passwordid").innerText = value;
+    }
+</script>
+</body>
+</html>
