@@ -86,7 +86,7 @@
 <tr>
 <td>Numbers  of Characters		</td>
 <td>Numbers Only				</td>
-<td>Lowercase Letters			</td>   
+<td>Lowercase Letters			</td>
 <td>Upper and Lowercase Letters			</td>
 <td>Numbers,Upper and Lowercase Letters			</td>
 <td>Numbers,Upper and Lowercase Letters,Symbols			</td>
@@ -228,38 +228,37 @@
         var numbers = '0123456789';
         var numUppLow = numbers + upperString + lowerString;
         var mixedVariable = lowerString+upperString+numbers+symbols;
-        console.log(mixedVariable);
         var value = '';
         //numbers only
         switch (type) {
             case 1:
                 for (i = 0; i < quantity; i++) {
                     value += numbers.charAt(Math.floor(Math.random() * numbers.length));
-                    console.log(value);
+
                 }
                 break;
             case 2:
                 for (i = 0; i < quantity; i++) {
                     value += lowerString.charAt(Math.floor(Math.random() * lowerString.length));
-                    console.log(value);
+
                 }
                 break;
             case 3:
                 for (i = 0; i < quantity; i++) {
                     value += mixedString.charAt(Math.floor(Math.random() * mixedString.length));
-                    console.log(value);
+
                 }
                 break;
             case 4:
                 for (i = 0; i < quantity; i++) {
                     value += numUppLow.charAt(Math.floor(Math.random() * numUppLow.length));
-                    console.log(value);
+
                 }
                 break;
             case 5:
                 for (i = 0; i < quantity; i++) {
                     value += mixedVariable.charAt(Math.floor(Math.random() * mixedVariable.length));
-                    console.log(value);
+
                 }
                 break;
 
